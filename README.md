@@ -29,11 +29,11 @@ This script allows you to switch keyboard layouts (e.g., between English and Rus
    pip install -r requirements.txt
    ```
 
-# ⚙️ Enable Automatic Startup (Automated in version 1.1)
+# ⚙️ Enable Automatic Startup (automated in version 1.1)
 
 The script will automatically create and enable a systemd service upon execution.
 
-# 🛠️ Optional only for version 1.0
+# 🛠️ Optional (only for version 1.0)
 
 **Enable automatic startup:
 Create a systemd service to run the script at boot:**
