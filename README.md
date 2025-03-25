@@ -1,4 +1,4 @@
-# Keyboard Switcher for Linux
+# Keyboard Switcher for Linux 
 
 This script allows you to switch keyboard layouts (e.g., between English and Russian) using the `Pause` key.
 
@@ -29,7 +29,11 @@ This script allows you to switch keyboard layouts (e.g., between English and Rus
    pip install -r requirements.txt
    ```
 
-# Optional
+# ⚙️ Enable Automatic Startup (Automated in version 1.1)
+
+The script will automatically create and enable a systemd service upon execution.
+
+# 🛠️ Optional only for version 1.0
 
 **Enable automatic startup:
 Create a systemd service to run the script at boot:**
@@ -67,7 +71,7 @@ sudo systemctl start keyboard_switcher.service
 Run the script manually with:
 
 ```bash
-python3 key_switcher_v.1.0.py
+python3 key_switcher_v.1.1.py
 ```
 
 Once running, you can switch keyboard layouts using the `Pause` key.
@@ -84,9 +88,11 @@ Once running, you can switch keyboard layouts using the `Pause` key.
 
 ✅ Proper error handling and status logging (logs errors for debugging)
 
+✅ Automatically converts the last typed word if the cursor is positioned right after it
+
 ## 🎯 Who is this for?
 
-For **Linux** users who frequently switch keyboard layouts and want to do it with a single key.
+For **Linux** users who frequently switch keyboard layouts and want to do it with a single key, including automatic word conversion.
 
 💡 **Simplicity > Complexity** – minimal code, maximum benefit!
 
