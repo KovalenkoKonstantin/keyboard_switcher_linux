@@ -1,5 +1,10 @@
 import subprocess
+import logging
 from pynput import keyboard
+
+# Функция логирования
+logging.basicConfig(filename="keyboard_switcher.log", level=logging.INFO, 
+                    format="%(asctime)s - %(levelname)s - %(message)s")
 
 # Функция для переключения раскладки клавиатуры
 def switch_layout():
@@ -27,4 +32,5 @@ def start_listener():
         listener.join()
 
 if __name__ == "__main__":
+    logging.info("Keyboard Switcher started")
     start_listener()
